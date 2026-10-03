@@ -1,1 +1,5 @@
+# Ejecutables
+*.exe
 
+# Archivos de Visual Studio Code
+.vscode/
