@@ -1,43 +1,22 @@
-HISPANO 0.0.1
+# HISPANO 0.0.1
 
-Solo tiene:
+## Filosofía
 
-Valores, numero, texto, booleano
+HISPANO es un lenguaje de programación de propósito general
+diseñado originalmente en español.
 
-Ejemplos:
+## Tipos básicos
 
-42
-3.14
-"Hola"
-verdadero
-falso
+numero
+texto
+booleano
 
-VARIBLES:
+## Variables
 
 nombre = "Rey"
-edad = 16
 
-Salida:
+## Salida
 
 mostrar("Hola")
-mostrar(edad)
 
-Operaciones:
-resultado = 10 + 5
-
-Y:
-
-+
--
-*
-/
-
-Comparaciones:
-==
-!=
->
-<
->=
-<=
-
-Eso es TODO en 0.0.1.
+esto es todo por la 0.0.1
