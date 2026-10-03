@@ -1,8 +1,31 @@
-
 #include <stdio.h>
 
-int main(void)
+int main(int argc, char *argv[])
 {
-    printf("HISPANO 0.0.1\n");
+    if (argc < 2)
+    {
+        printf("Uso: hispano <archivo.hsp>\n");
+        return 1;
+    }
+
+    FILE *archivo = fopen(argv[1], "r");
+
+    if (archivo == NULL)
+    {
+        printf("Error: no se pudo abrir el archivo '%s'\n", argv[1]);
+        return 1;
+    }
+
+    printf("Archivo abierto: %s\n\n", argv[1]);
+
+    int caracter;
+
+    while ((caracter = fgetc(archivo)) != EOF)
+    {
+        putchar(caracter);
+    }
+
+    fclose(archivo);
+
     return 0;
 }
